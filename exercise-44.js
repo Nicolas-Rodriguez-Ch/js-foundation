@@ -4,7 +4,12 @@
 // obtenerValor({ a: 1, b: 2, c: 3 }, "b"); // 2
 // obtenerValor({ b: 2, c: 3 }, "a"); // false
 
-
+function obtenerValor(obj, str) {
+    if (obj[str]) {
+        return obj[str];
+    }
+    return false;
+}
 
 console.log(obtenerValor({ a: 1, b: 2, c: 3 }, "a")); // 1
 console.log(obtenerValor({ a: 1, b: 2, c: 3 }, "b")); // 2
