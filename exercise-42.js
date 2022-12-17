@@ -12,7 +12,7 @@
 
 function saludar(obj) {
     if(obj.edad){
-    return `hola ${obj.nombre}, tienes ${obj.edad}`;
+        return `hola ${obj.nombre}, tienes ${obj.edad}`;
     }
     return `Hola ${obj.nombre}`
 }
